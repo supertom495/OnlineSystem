@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<!-- <?xml version="1.0" encoding="UTF-8"?> <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+		http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1"> -->
+
+	<description>My first solo project in java!</description>
+	<display-name>OnlineSystem</display-name>
+
+	<!-- welcome info -->
+
+	<welcome-file-list>
+		<welcome-file>Homepage.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- How servlet mapped -->
+
+	<servlet>
+		<servlet-name>CaseNumServlet</servlet-name>
+		<servlet-class>servlet.CaseNumServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CaseNumServlet</servlet-name>
+		<url-pattern>/servlet/CaseNumServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- How jsp mapped -->
+
+	<servlet>
+		<servlet-name>splitBill</servlet-name>
+		<jsp-file>/split_bill.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>splitBill</servlet-name>
+		<url-pattern>/split-bill</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

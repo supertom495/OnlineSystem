@@ -1,0 +1,39 @@
+@charset "UTF-8";
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #bebebe;
+}
+
+li {
+    float: left;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #bebebe;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #cc0000;
+}
+
+p {
+    text-indent: 2.0em;
+}
+
+#submission {
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+}
